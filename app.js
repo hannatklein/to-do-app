@@ -29,6 +29,22 @@ function onReady() {
 
     //empty the input
     newToDoText.value = '';
+
+    //
+
+    //delete an li
+    //let deleteLi = document.createElement('li');
+
+    //delete item
+    //deleteLi.textContent = "[delete]";
+
+    //attach delete button to li
+    //deleteLi.appendChild(deleteLink);
+
+    var deleteButton = document.createElement('button');
+    deleteButton.innerText = "Delete";
+    deleteButton.className = "delete";  
+
   });
  }
 
