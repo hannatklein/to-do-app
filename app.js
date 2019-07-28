@@ -33,17 +33,15 @@ function onReady() {
     //
 
     //delete an li
-    //let deleteLi = document.createElement('li');
+    let deleteLi = document.createElement('li');
 
     //delete item
-    //deleteLi.textContent = "[delete]";
+    deleteLi.textContent = "[delete]";
 
     //attach delete button to li
-    //deleteLi.appendChild(deleteLink);
+    deleteLi.appendChild(deleteButton);
 
-    var deleteButton = document.createElement('button');
-    deleteButton.innerText = "Delete";
-    deleteButton.className = "delete";  
+  
 
   });
  }
