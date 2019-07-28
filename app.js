@@ -2,6 +2,7 @@ function onReady() {
   const addToDoForm = document.getElementById('addToDoForm');
   const newToDoText = document.getElementById('newToDoText');
   const toDoList = document.getElementById('toDoList');
+  const deleteButton = document.createElement('button');
 
   addToDoForm.addEventListener('submit', () => {
     event.preventDefault();
@@ -32,16 +33,11 @@ function onReady() {
 
     //
 
-    //delete an li
-    let deleteLi = document.createElement('li');
+    //delete button text
+    deleteButton.innerHTML = "Delete";
 
-    //delete item
-    deleteLi.textContent = "[delete]";
-
-    //attach delete button to li
-    deleteLi.appendChild(deleteButton);
-
-  
+    //attach to li
+    newLi.appendChild(deleteButton);
 
   });
  }
