@@ -29,20 +29,6 @@ function onReady() {
 
     //empty the input
     newToDoText.value = '';
-
-    //
-
-    //delete an li
-    let deleteLi = document.createElement('li');
-
-    //delete item
-    deleteLi.textContent = "[delete]";
-
-    //attach delete button to li
-    deleteLi.appendChild(deleteButton);
-
-  
-
   });
  }
 
